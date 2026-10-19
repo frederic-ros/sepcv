@@ -1,0 +1,16 @@
+{
+  "title": "Data, results and reports for \"Early performance diagnostics for rare-class active learning: when are they available, reliable, and worth their cost?\"",
+  "upload_type": "dataset",
+  "description": "Input data, raw results of every experiment (one JSON file per task, seed and start, with the full acquisition order), analysis reports and figures for the paper, with a snapshot of the sepcv software that regenerates every report, table value and figure. See README.md.",
+  "creators": [
+    {"name": "Ros, Frédéric", "affiliation": "Université d'Orléans, INSA-CVL, PRISME UR 4229"},
+    {"name": "Bertrand-Bonvillain, Erwan", "affiliation": "Université d'Orléans, INSA-CVL, PRISME UR 4229"},
+    {"name": "Nasser, Yassine", "affiliation": "Université d'Orléans, INSA-CVL, PRISME UR 4229"}
+  ],
+  "keywords": ["active learning", "class imbalance", "rare-class detection", "performance forecasting", "annotation budget allocation", "reproducibility"],
+  "license": "cc-by-4.0",
+  "related_identifiers": [
+    {"relation": "isSupplementTo", "identifier": "https://github.com/frederic-ros/<repository>", "resource_type": "software"}
+  ],
+  "version": "{VERSION}"
+}

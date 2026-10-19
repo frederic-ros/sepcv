@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper and the Zenodo deposit."
+title: "sepcv: early performance diagnostics for rare-class active learning"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/frederic-ros/<repository>"
+authors:
+  - family-names: Ros
+    given-names: Frédéric
+    affiliation: "Université d'Orléans, INSA-CVL, PRISME UR 4229"
+  - family-names: Bertrand-Bonvillain
+    given-names: Erwan
+    affiliation: "Université d'Orléans, INSA-CVL, PRISME UR 4229"
+  - family-names: Nasser
+    given-names: Yassine
+    affiliation: "Université d'Orléans, INSA-CVL, PRISME UR 4229"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.XXXXXXX"
+    description: "Data, results and reports"
+preferred-citation:
+  type: article
+  title: "Early performance diagnostics for rare-class active learning: when are they available, reliable, and worth their cost?"
+  authors:
+    - family-names: Ros
+      given-names: Frédéric
+    - family-names: Bertrand-Bonvillain
+      given-names: Erwan
+    - family-names: Nasser
+      given-names: Yassine
+  journal: "Neurocomputing"
+  year: 2026
+  notes: "Submitted"

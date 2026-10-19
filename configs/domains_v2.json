@@ -1,0 +1,46 @@
+{
+  "name": "domains_v2",
+  "out_dir": "results/domains_v2",
+  "n_jobs": 8,
+  "sources": [
+    {
+      "kind": "eswa_cache",
+      "path": "data/cache",
+      "manifest": "data/cache/manifest.json",
+      "family": "domain",
+      "datasets": "all",
+      "exclude_prefix": [
+        "imblearn_",
+        "standard_"
+      ]
+    }
+  ],
+  "protocol": {
+    "seeds": 10,
+    "starts": [
+      "warm",
+      "cold"
+    ],
+    "n_init": 30,
+    "batch": 8,
+    "rounds": 20,
+    "probe_rounds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "learners": [
+      "logreg",
+      "rf",
+      "gbdt",
+      "knn"
+    ],
+    "strategies": [
+      "margin",
+      "random",
+      "most_likely_positive",
+      "coreset"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "controlled",
+  "out_dir": "results/controlled",
+  "n_jobs": 8,
+  "sources": [
+    {
+      "kind": "synthetic",
+      "geometries": ["gauss", "multimodal", "moon"],
+      "irs": [5, 20, 50, 100],
+      "seps": [1, 2, 3, 4, 6],
+      "dims": [10, 50],
+      "n": 10000
+    }
+  ],
+  "protocol": {
+    "seeds": 5,
+    "starts": ["warm", "cold"],
+    "learners": ["logreg", "rf", "gbdt", "knn"],
+    "strategies": ["margin", "random"]
+  }
+}

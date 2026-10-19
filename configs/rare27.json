@@ -1,0 +1,41 @@
+{
+  "name": "rare27",
+  "out_dir": "results/rare27",
+  "n_jobs": 8,
+  "sources": [
+    {
+      "kind": "tabular",
+      "path": "data/rare27",
+      "family": "tabular",
+      "datasets": "all"
+    }
+  ],
+  "protocol": {
+    "seeds": 10,
+    "starts": [
+      "warm",
+      "cold"
+    ],
+    "n_init": 30,
+    "batch": 8,
+    "rounds": 20,
+    "probe_rounds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "learners": [
+      "logreg",
+      "rf",
+      "gbdt",
+      "knn"
+    ],
+    "strategies": [
+      "margin",
+      "random",
+      "most_likely_positive",
+      "coreset"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sepcv"
+version = "1.0.0"
+description = "Early performance diagnostics (SepCV, SepCV+) for rare-class active learning"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Frédéric Ros" }, { name = "Erwan Bertrand-Bonvillain" }, { name = "Yassine Nasser" }]
+dependencies = [
+  "numpy>=1.23",
+  "scipy>=1.9",
+  "pandas>=1.5",
+  "scikit-learn>=1.3",
+  "joblib>=1.2",
+  "openpyxl>=3.0",
+  "matplotlib>=3.6",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+sepcv = "sepcv.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

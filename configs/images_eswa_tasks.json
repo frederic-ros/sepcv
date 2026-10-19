@@ -1,0 +1,222 @@
+{
+  "name": "images_eswa_tasks",
+  "out_dir": "results/images_eswa_tasks",
+  "n_jobs": 8,
+  "sources": [
+    {
+      "kind": "embeddings",
+      "path": "data/embeddings",
+      "family": "image",
+      "backbones": [
+        "dinov2_vits14",
+        "resnet18"
+      ],
+      "max_pool": 10000,
+      "min_rare": 40,
+      "datasets": [
+        {
+          "dataset": "pcam",
+          "domain": "medicine",
+          "positive_classes": [
+            1
+          ],
+          "target_irs": [
+            49,
+            99
+          ]
+        },
+        {
+          "dataset": "cifar10",
+          "domain": "natural",
+          "positive_classes": [
+            0,
+            1
+          ],
+          "target_irs": [
+            49,
+            99
+          ]
+        },
+        {
+          "dataset": "cifar100",
+          "domain": "natural",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            99
+          ]
+        },
+        {
+          "dataset": "stl10",
+          "domain": "natural",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            49
+          ]
+        },
+        {
+          "dataset": "svhn",
+          "domain": "digits",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            49,
+            99
+          ]
+        },
+        {
+          "dataset": "eurosat",
+          "domain": "remote_sensing",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            49,
+            99
+          ]
+        },
+        {
+          "dataset": "gtsrb",
+          "domain": "traffic",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            99
+          ]
+        },
+        {
+          "dataset": "food101",
+          "domain": "fine_grained",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            99
+          ]
+        },
+        {
+          "dataset": "caltech101",
+          "domain": "fine_grained",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            49,
+            99
+          ]
+        },
+        {
+          "dataset": "flowers102",
+          "domain": "fine_grained",
+          "positive_classes": "largest:1",
+          "target_irs": [
+            49,
+            99
+          ]
+        },
+        {
+          "dataset": "fgvc_aircraft",
+          "domain": "fine_grained",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            49
+          ]
+        },
+        {
+          "dataset": "oxford_iiit_pet",
+          "domain": "fine_grained",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            49
+          ]
+        },
+        {
+          "dataset": "dtd",
+          "domain": "fine_grained",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            49
+          ]
+        },
+        {
+          "dataset": "fashion_mnist",
+          "domain": "digits",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            99
+          ]
+        },
+        {
+          "dataset": "mnist",
+          "domain": "digits",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            49,
+            99
+          ]
+        },
+        {
+          "dataset": "kmnist",
+          "domain": "digits",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            99
+          ]
+        },
+        {
+          "dataset": "emnist_balanced",
+          "domain": "digits",
+          "positive_classes": [
+            0
+          ],
+          "target_irs": [
+            99
+          ]
+        }
+      ]
+    }
+  ],
+  "protocol": {
+    "seeds": 5,
+    "starts": [
+      "warm",
+      "cold"
+    ],
+    "n_init": 30,
+    "batch": 8,
+    "rounds": 20,
+    "probe_rounds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "learners": [
+      "logreg",
+      "rf",
+      "gbdt",
+      "knn"
+    ],
+    "strategies": [
+      "margin",
+      "random"
+    ]
+  }
+}

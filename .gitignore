@@ -1,0 +1,19 @@
+# data, results and generated outputs (archived on Zenodo)
+/data/
+/results/
+/reports/
+/paper_figures/
+/zenodo_upload/
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+build/
+dist/
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
