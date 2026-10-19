@@ -5,7 +5,7 @@ F. Ros, E. Bertrand-Bonvillain, Y. Nasser — Université d'Orléans, INSA-CVL, 
 This deposit contains everything needed to check or reproduce the paper: the input data, the
 raw results of every experiment, the analysis reports from which every number of the paper is
 taken, the figures, and a snapshot of the software (`sepcv` {VERSION}). The software is
-developed at https://github.com/frederic-ros/<repository>.
+developed at https://github.com/frederic-ros/sepcv.
 
 ## Contents
 

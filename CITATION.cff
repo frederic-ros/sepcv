@@ -3,7 +3,7 @@ message: "If you use this software, please cite the paper and the Zenodo deposit
 title: "sepcv: early performance diagnostics for rare-class active learning"
 version: 1.0.0
 license: MIT
-repository-code: "https://github.com/frederic-ros/<repository>"
+repository-code: "https://github.com/frederic-ros/sepcv"
 authors:
   - family-names: Ros
     given-names: Frédéric
@@ -16,7 +16,7 @@ authors:
     affiliation: "Université d'Orléans, INSA-CVL, PRISME UR 4229"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.XXXXXXX"
+    value: "10.5281/zenodo.23482224"
     description: "Data, results and reports"
 preferred-citation:
   type: article

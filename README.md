@@ -11,7 +11,7 @@ separability on the labeled set of an active learner, and evaluates when they ar
 reliable and useful for allocating a shared annotation budget across rare-class tasks. The
 repository runs every experiment of the paper and regenerates every report, table value and
 figure. The data, the raw results and the reports are archived on Zenodo:
-**DOI 10.5281/zenodo.XXXXXXX**.
+**DOI 10.5281/zenodo.23482224**.
 
 ## Installation
 
